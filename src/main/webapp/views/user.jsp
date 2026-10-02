@@ -1,16 +1,15 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: usuario-m
-  Date: 25/9/26
-  Time: 14:11
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
-</html>
+<%@ include file="../partials/header.jsp" %>
+
+        <h2>Hello World</h2>
+
+        <%
+            if (request.getAttribute("userName") != null) {
+        %>
+
+            <h2>Hello ${userName}</h2>
+
+        <%
+            }
+        %>
+
+<%@ include file="../partials/footer.jsp" %>
